@@ -303,3 +303,25 @@ CHALANA HAI.
 5.TURBO KYA HAI?
 
 = MONOREPO BUILD SYSTEM JO CACHING AUR PARALLEL EXECUTION PROVIDE KARTA HAI.
+
+////////////////////////   DAY-2   //////////////////////////
+
+✅ Monorepo Setup
+
+✅ GitHub Push
+
+⬜ Clean Repository
+
+⬜ Shared Packages
+
+⬜ UI Library
+
+⬜ API Structure
+
+⬜ Authentication
+
+⬜ Database
+
+⬜ Admin Dashboard
+
+⬜ Deployment
