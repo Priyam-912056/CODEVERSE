@@ -71,6 +71,7 @@ export default function RegionSelector({ onComplete }: RegionSelectionProps) {
                 index={index}
                 active={active}
                 onSelect={handleSelect}
+                isDetected={selectedCountry === detectedCountry}
               />
             );
           })}
