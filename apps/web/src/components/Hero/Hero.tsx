@@ -8,34 +8,23 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-200 w-full items-center justify-center px-6 text-white sm:px-10"
+      className="relative flex min-h-150 w-full items-center justify-center p-10  text-white sm:px-10"
     >
-      <div className="max-w-5xl text-center">
+      <div className="max-w-5xl text-center pt-16">
+        <HeroBadge text="AI-Powered Developer Platform" />
 
-        <HeroBadge text="AI POWERED DEVELOPER PLATFORM" />
+        <HeroTitle title="Build Skills That " highlight="Matter" />
 
-        <HeroTitle
-          title="BUILD SKILLS THAT "
-          highlight="MATTER"
-        />
-
-        <HeroDescription
-          description="A MODERN LEARNING PLATFORM WHERE DEVELOPERS PRACTICE REAL INTERVIEW QUESTIONS, IMPROVE SYSTEM DESIGN SKILLS, AND GROW WITH AI-POWERED FEEDBACK — ALL IN ONE PLACE."
-        />
+        <HeroDescription description="Master development with AI, real projects, and interview practice — all in one platform." />
 
         <HeroHighlights
-          highlights={[
-            "REAL INTERVIEW QUESTIONS",
-            "AI FEEDBACK SYSTEM",
-            "CAREER GROWTH TRACKING",
-          ]}
+          highlights={["Real Projects", "AI Mentor", "Interview Ready"]}
         />
 
         <HeroAction
-          primaryLabel="START LEARNING"
-          secondaryLabel="EXPLORE PLATFORM"
+          primaryLabel="Start Learning"
+          secondaryLabel="Explore Platform"
         />
-
       </div>
     </section>
   );

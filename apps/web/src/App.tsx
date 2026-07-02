@@ -2,6 +2,7 @@ import { useState } from "react";
 import RegionSelector from "./components/RegionSelector/RegionSelector";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import Features from "./components/features/Features";
 
 const App = () => {
   const [entered, setEntered] = useState(
@@ -19,6 +20,7 @@ const App = () => {
         <>
         <Navbar />
         <Hero />
+        <Features/>
         </>
       ) : (
         <RegionSelector onComplete={handleRegionComplete} detectedCountry={""} />

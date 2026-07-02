@@ -13,10 +13,10 @@ export default function NavLinks({ onNavigate }: NavLinksProps) {
           key={id}
           onClick={() => onNavigate(id)}
           className="
-            relative text-sm font-medium uppercase tracking-[0.2em] text-zinc-400 
-            transition-all duration-300 hover:text-white
-            after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-white 
-            after:transition-all after:duration-300 hover:after:w-full
+             relative text-sm font-medium uppercase tracking-[0.2em] text-zinc-400 
+             transition-all duration-300 hover:text-white
+             after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-white 
+             after:transition-all after:duration-300 hover:after:w-full
           "
         >
           {label}
