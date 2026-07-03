@@ -3,6 +3,9 @@ import RegionSelector from "./components/RegionSelector/RegionSelector";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Features from "./components/features/Features";
+import Stats from "./components/stats/Stats";
+import About from "./components/about/About";
+import Roadmap from "./components/roadmaps/Roadmap";
 
 const App = () => {
   const [entered, setEntered] = useState(
@@ -21,6 +24,9 @@ const App = () => {
         <Navbar />
         <Hero />
         <Features/>
+        <Stats/>
+        <About/>
+        <Roadmap/>
         </>
       ) : (
         <RegionSelector onComplete={handleRegionComplete} detectedCountry={""} />
