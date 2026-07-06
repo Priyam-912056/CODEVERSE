@@ -12,7 +12,11 @@ export default function RoadmapHeader({
   className,
 }: RoadmapHeaderProps) {
   return (
-    <div className={`mb-20 text-center ${className ?? ""}`}>
+    <div className={`mb-20 items-center justify-center text-center ${className ?? ""}`}>
+      <span
+          aria-hidden="true"
+          className="h-2 w-2 rounded-full bg-white animate-pulse"
+        />
       <p className="mb-3 text-xs uppercase tracking-[0.35em] text-violet-300">
         {badge}
       </p>

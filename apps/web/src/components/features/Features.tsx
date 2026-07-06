@@ -4,7 +4,10 @@ import { FEATURES } from "./data";
 
 export default function Features() {
   return (
-    <section className="relative overflow-hidden px-6 py-10 md:5 text-white">
+    <section
+      id="features"
+      className="relative overflow-hidden px-6 py-10 md:5 text-white"
+    >
       <div className="relative z-10 mx-auto max-w-7xl">
         <FeatureHeader
           badge="OUR CORE FEATURES"
@@ -14,10 +17,7 @@ export default function Features() {
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {FEATURES.map((feature) => (
-            <FeatureCard
-              key={feature.id}
-              feature={feature}
-            />
+            <FeatureCard key={feature.id} feature={feature} />
           ))}
         </div>
       </div>

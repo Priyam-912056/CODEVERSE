@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { NavId } from "./types";
-
+import { useNavigate } from "react-router-dom";
 import NavLogo from "./NavLogo";
 import NavAction from "./NavAction";
 import MobileMenu from "./MobileMenu";
@@ -10,10 +10,27 @@ import NavLinks from "./NavLink";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
+  const navigate = useNavigate();
+
   const handleNavClick = (id: NavId) => {
     setOpen(false);
+      
+      if (id === "pricing") {
+   navigate("/pricing");
+   return;
+}
 
-    const section = document.getElementById(id);
+if (id === "entertainment") {
+   navigate("/entertainment");
+   return;
+}
+
+  if (id === "home") {
+   navigate("/");
+   return;
+}
+
+  const section = document.getElementById(id);
 
     if (!section) return;
 

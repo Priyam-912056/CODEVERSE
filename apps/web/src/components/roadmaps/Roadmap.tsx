@@ -16,7 +16,7 @@ export default function Roadmap() {
           description="Choose your learning path and master industry-ready skills with structured roadmaps."
         />
 
-        <div className="grid gap-8 md:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-3 ">
           {LEARNING_TRACKS.map((track) => (
             <RoadmapCard
               key={track.id}

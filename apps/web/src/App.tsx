@@ -1,13 +1,8 @@
 import { useState } from "react";
 import RegionSelector from "./components/RegionSelector/RegionSelector";
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import Features from "./components/features/Features";
-import Stats from "./components/stats/Stats";
-import About from "./components/about/About";
-import Roadmap from "./components/roadmaps/Roadmap";
+import AppRoutes from "./routes/AppRoutes";
 
-const App = () => {
+export default function App() {
   const [entered, setEntered] = useState(
     sessionStorage.getItem("region-selected") === "true"
   );
@@ -18,21 +13,15 @@ const App = () => {
   };
 
   return (
-    <div>
+    <>
       {entered ? (
-        <>
-        <Navbar />
-        <Hero />
-        <Features/>
-        <Stats/>
-        <About/>
-        <Roadmap/>
-        </>
+        <AppRoutes />
       ) : (
-        <RegionSelector onComplete={handleRegionComplete} detectedCountry={""} />
+        <RegionSelector
+          onComplete={handleRegionComplete}
+          detectedCountry=""
+        />
       )}
-    </div>
+    </>
   );
-};
-
-export default App;
+}
