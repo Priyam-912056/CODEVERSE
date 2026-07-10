@@ -29,8 +29,11 @@ const stats = (track: LearningTrack) => [
   {
     icon: FaRocket,
     label: "Projects",
-    value: track.projects,
-  },
+    value: track.timeline.reduce(
+    (total, phase) => total + phase.projects.length,
+    0
+  ),
+}
 ];
 
 export default function HeroStats({ track }: HeroStatsProps) {

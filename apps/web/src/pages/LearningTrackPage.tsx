@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { LEARNING_TRACKS } from "../data/learningTracks";
 import Hero from "../components/learningTrack/Hero/Hero";
 import Overview from "../components/learningTrack/Overview/Overview";
+import Timeline from "../components/learningTrack/TimeLine/Timeline";
 
 export default function LearningTrackPage() {
   const { trackId } = useParams();
@@ -24,6 +25,7 @@ export default function LearningTrackPage() {
     <div className="min-h-screen bg-black text-white">
       <Hero track={track} />
       <Overview track={track} />
+      <Timeline track={track} />
     </div>
   );
 }
