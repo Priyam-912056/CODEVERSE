@@ -17,7 +17,14 @@ export interface TimelinePhase {
   title: string;
   description: string;
   modules: SkillItem[];
-  projects: ProjectItem[];      // ✅ lowercase
+  projects: ProjectItem[];
+  resources: ResourceItem[];    // ✅ lowercase
+}
+
+export interface ResourceItem {
+  title: string;
+  type: "Documentation" | "Video" | "GitHub" | "Article" | "Cheat Sheet";
+  url: string;
 }
 
 export interface LearningTrack {

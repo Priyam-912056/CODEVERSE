@@ -2,6 +2,7 @@ import type { TimelinePhase as TimelinePhaseType } from "../../../types/learning
 import TimelineItem from "./TimelineItem";
 import ProjectHeader from "./ProjectsHeader";
 import ProjectCard from "./ProjectCard";
+import Resources from "../Resources/Resources";
 
 interface TimelinePhaseProps {
   phase: TimelinePhaseType;
@@ -68,7 +69,10 @@ export default function TimelinePhase({ phase, index }: TimelinePhaseProps) {
               <ProjectCard key={project.title} project={project} />
             ))}
           </div>
-          
+
+          {/* Resources */}
+          <Resources phase={phase} />
+
         </div>
       </div>
     </div>
