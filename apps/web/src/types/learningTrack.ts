@@ -27,6 +27,11 @@ export interface ResourceItem {
   url: string;
 }
 
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 export interface LearningTrack {
   id: string;
   title: string;

@@ -1046,6 +1046,371 @@ export const LEARNING_TRACKS: LearningTrack[] = [
     ]
   },
   {
+    id: "cloud-devops",
+    title: "CLOUD & DEVOPS",
+    description: "Deploy, automate and scale applications in the cloud.",
+    icon: FaCloud,
+    topics: ["AWS & Azure", "Docker", "Kubernetes", "CI / CD Pipelines"],
+    level: "Intermediate",
+    duration: "5 Months",
+    lessons: 48,
+    overview: "Bridge the gap between development and operations teams. Automate application testing, configure cloud services for zero-downtime releases, scale infrastructure through code, and manage orchestration clusters.",
+    skills: [
+      { name: "Linux Shell Scripting", icon: FaCode },
+      { name: "AWS (EC2, S3, RDS, IAM)", icon: FaAws },
+      { name: "Microsoft Azure Solutions", icon: FaMicrosoft },
+      { name: "Google Cloud Engine", icon: SiGooglecloud },
+      { name: "Docker Containerization", icon: SiDocker },
+      { name: "Kubernetes Cluster Management", icon: SiKubernetes },
+      { name: "Helm Package Manager", icon: SiHelm },
+      { name: "Jenkins Automation Server", icon: SiJenkins },
+      { name: "GitHub Actions Pipelines", icon: SiGithubactions },
+      { name: "Terraform Infrastructure as Code", icon: SiTerraform },
+      { name: "Ansible Configuration Engine", icon: SiAnsible },
+      { name: "Prometheus Monitoring", icon: SiPrometheus },
+      { name: "Grafana Visualization Dashboards", icon: SiGrafana },
+      { name: "YAML Multi-container Specs", icon: FaCloud }
+    ],
+    timeline: [
+      {
+        title: "Cloud Provider Architectures",
+        description: "Provision operational virtual servers across modern web hyperscalers.",
+        modules: [
+          { name: "Linux Shell Scripting", icon: FaCode },
+          { name: "AWS (EC2, S3, RDS, IAM)", icon: FaAws },
+          { name: "Microsoft Azure Solutions", icon: FaMicrosoft },
+          { name: "Google Cloud Engine", icon: SiGooglecloud }
+        ],
+        projects: [
+          {
+            title: "Multi-Cloud Hybrid Network Infrastructure",
+            description: "Set up secure VPC peering, automated bash cron back-ups, and structural multi-tier host routing schemas.",
+            difficulty: "Intermediate",
+            duration: "2 Weeks",
+            technologies: [
+              { name: "Linux Shell Scripting", icon: FaCode },
+              { name: "AWS (EC2, S3, RDS, IAM)", icon: FaAws },
+              { name: "Microsoft Azure Solutions", icon: FaMicrosoft }
+            ]
+          }
+        ],
+        resources: [
+          {
+            title: "AWS Architecture Center",
+            type: "Documentation",
+            url: "https://aws.amazon.com/architecture/"
+          },
+          {
+            title: "Bash Scripting Tutorial for Beginners",
+            type: "Video",
+            url: "https://youtu.be/e7BufAVwGyM"
+          },
+          {
+            title: "Microsoft Azure Fundamentals Course",
+            type: "Documentation",
+            url: "https://learn.microsoft.com/en-us/training/azure/"
+          }
+        ]
+      },
+      {
+        title: "Containerization & Orchestration",
+        description: "Isolate micro-environments and coordinate clustering spaces.",
+        modules: [
+          { name: "Docker Containerization", icon: SiDocker },
+          { name: "Kubernetes Cluster Management", icon: SiKubernetes },
+          { name: "Helm Package Manager", icon: SiHelm },
+          { name: "YAML Multi-container Specs", icon: FaCloud }
+        ],
+        projects: [
+          {
+            title: "Multi-Region Highly Available Kubernetes Infrastructure",
+            description: "Provisioned global infrastructure using Terraform modules and structured zero-downtime application deployments across orchestrated clustering spaces.",
+            difficulty: "Advanced",
+            duration: "4 Weeks",
+            technologies: [
+              { name: "Terraform Infrastructure as Code", icon: SiTerraform },
+              { name: "Kubernetes Cluster Management", icon: SiKubernetes },
+              { name: "AWS (EC2, S3, RDS, IAM)", icon: FaAws },
+              { name: "Helm Package Manager", icon: SiHelm },
+              { name: "Docker Containerization", icon: SiDocker },
+              { name: "YAML Multi-container Specs", icon: FaCloud }
+            ]
+          }
+        ],
+        resources: [
+          {
+            title: "Docker Curriculum & Container Guides",
+            type: "Guide",
+            url: "https://docker-curriculum.com/"
+          },
+          {
+            title: "Kubernetes Basics & Interactive Tutorials",
+            type: "Documentation",
+            url: "https://kubernetes.io/docs/tutorials/"
+          },
+          {
+            title: "Helm Package Manager Docs",
+            type: "Documentation",
+            url: "https://helm.sh/docs/"
+          }
+        ]
+      },
+      {
+        title: "Continuous Integration & Delivery",
+        description: "Design automated test workflows and direct production rollouts.",
+        modules: [
+          { name: "Jenkins Automation Server", icon: SiJenkins },
+          { name: "GitHub Actions Pipelines", icon: SiGithubactions }
+        ],
+        projects: [
+          {
+            title: "Automated GitOps CI/CD Deployment Pipeline",
+            description: "Designed multi-stage delivery setups with structural testing checks, automated canary rollouts, and real-time dashboard instrumentation loops.",
+            difficulty: "Intermediate",
+            duration: "3 Weeks",
+            technologies: [
+              { name: "GitHub Actions Pipelines", icon: SiGithubactions },
+              { name: "Jenkins Automation Server", icon: SiJenkins }
+            ]
+          }
+        ],
+        resources: [
+          {
+            title: "GitHub Actions Workflow Architecture",
+            type: "Documentation",
+            url: "https://docs.github.com/en/actions"
+          },
+          {
+            title: "Jenkins Pipeline Fundamentals",
+            type: "Video",
+            url: "https://youtu.be/7KcS70pK9as"
+          }
+        ]
+      },
+      {
+        title: "Infrastructure as Code & Metrics",
+        description: "Define computing nodes programmatically and log dashboard variables.",
+        modules: [
+          { name: "Terraform Infrastructure as Code", icon: SiTerraform },
+          { name: "Ansible Configuration Engine", icon: SiAnsible },
+          { name: "Prometheus Monitoring", icon: SiPrometheus },
+          { name: "Grafana Visualization Dashboards", icon: SiGrafana }
+        ],
+        projects: [
+          {
+            title: "Enterprise Declarative Monitoring Framework",
+            description: "Deploy centralized node monitors to scrape runtime cluster parameters and format dynamic alerts systems with Grafana interfaces.",
+            difficulty: "Advanced",
+            duration: "2 Weeks",
+            technologies: [
+              { name: "Prometheus Monitoring", icon: SiPrometheus },
+              { name: "Grafana Visualization Dashboards", icon: SiGrafana },
+              { name: "Ansible Configuration Engine", icon: SiAnsible },
+              { name: "Terraform Infrastructure as Code", icon: SiTerraform }
+            ]
+          }
+        ],
+        resources: [
+          {
+            title: "HashiCorp Terraform Associate Guide",
+            type: "Course",
+            url: "https://developer.hashicorp.com/terraform/tutorials"
+          },
+          {
+            title: "Ansible Getting Started Manual",
+            type: "Documentation",
+            url: "https://docs.ansible.com/ansible/latest/getting_started/index.html"
+          },
+          {
+            title: "Prometheus & Grafana Monitoring Basics",
+            type: "Video",
+            url: "https://www.youtube.com/watch?v=Dvo7EWM_K64"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: "system-design",
+    title: "SYSTEM DESIGN",
+    description: "Design scalable and reliable software architectures.",
+    icon: FaSitemap,
+    topics: ["Scalable Systems", "Microservices", "Caching", "Load Balancing"],
+    level: "Advanced",
+    duration: "3 Months",
+    lessons: 30,
+    overview: "Learn how tech giants build enterprise platforms serving millions of users. Deep dive into horizontal scaling bottlenecks, asynchronous message queues, distributed consensus, and fault-tolerant microservice blueprints.",
+    skills: [
+      { name: "Monolithic to Microservices", icon: FaSitemap },
+      { name: "Horizontal vs Vertical Scale", icon: FaSitemap },
+      { name: "Nginx Load Balancing Profiles", icon: SiNginx },
+      { name: "Database Sharding & Partitioning", icon: SiPostgresql },
+      { name: "Master-Slave Replication", icon: SiMysql },
+      { name: "Redis Cache Layer Design", icon: SiRedis },
+      { name: "CDN Edge Caching Strategies", icon: FaSitemap },
+      { name: "Apache Kafka Streaming Platforms", icon: SiApachekafka },
+      { name: "RabbitMQ Broker Systems", icon: SiRabbitmq },
+      { name: "API Gateway Integration Patterns", icon: FaSitemap },
+      { name: "CAP & PACELC Theorems", icon: FaSitemap },
+      { name: "Distributed Locking Engines", icon: SiRedis },
+      { name: "Elasticsearch Clustering", icon: SiElasticsearch },
+      { name: "Distributed Rate Limiters", icon: SiNginx },
+      { name: "Circuit Breakers & Graceful Degradation", icon: FaSitemap }
+    ],
+    timeline: [
+      {
+        title: "High Availability Core Scaling",
+        description: "Mitigate system bottlenecks using systematic request distribution patterns.",
+        modules: [
+          { name: "Monolithic to Microservices", icon: FaSitemap },
+          { name: "Horizontal vs Vertical Scale", icon: FaSitemap },
+          { name: "Nginx Load Balancing Profiles", icon: SiNginx },
+          { name: "Distributed Rate Limiters", icon: SiNginx }
+        ],
+        projects: [
+          {
+            title: "High-Throughput Global Edge Layer Engine",
+            description: "Engineered high availability routing structures utilizing multi-tier cache clusters, synchronized data sharding rules, and rate-limiting rulesets.",
+            difficulty: "Advanced",
+            duration: "3 Weeks",
+            technologies: [
+              { name: "Nginx Load Balancing Profiles", icon: SiNginx },
+              { name: "Distributed Rate Limiters", icon: SiNginx },
+              { name: "Monolithic to Microservices", icon: FaSitemap }
+            ]
+          }
+        ],
+        resources: [
+          {
+            title: "Nginx Architecture and Reverse Proxy Guide",
+            type: "Documentation",
+            url: "https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/"
+          },
+          {
+            title: "System Design Primer - Scaling Foundations",
+            type: "GitHub Repo",
+            url: "https://github.com/donnemartin/system-design-primer"
+          },
+          {
+            title: "Microservices Architecture Patterns",
+            type: "Article",
+            url: "https://microservices.io/"
+          }
+        ]
+      },
+      {
+        title: "Distributed Data Management",
+        description: "Optimize dataset partitions across global transactional nodes.",
+        modules: [
+          { name: "Database Sharding & Partitioning", icon: SiPostgresql },
+          { name: "Master-Slave Replication", icon: SiMysql },
+          { name: "CAP & PACELC Theorems", icon: FaSitemap }
+        ],
+        projects: [
+          {
+            title: "Sharded Multi-Region Transaction Ledger",
+            description: "Map fully distributed storage nodes configured with master-slave clustering scripts to test structural trade-offs under severe CAP network splits.",
+            difficulty: "Advanced",
+            duration: "2 Weeks",
+            technologies: [
+              { name: "Database Sharding & Partitioning", icon: SiPostgresql },
+              { name: "Master-Slave Replication", icon: SiMysql },
+              { name: "CAP & PACELC Theorems", icon: FaSitemap }
+            ]
+          }
+        ],
+        resources: [
+          {
+            title: "PostgreSQL Data Partitioning Methods",
+            type: "Documentation",
+            url: "https://www.postgresql.org/docs/current/ddl-partitioning.html"
+          },
+          {
+            title: "Understanding the CAP Theorem",
+            type: "Article",
+            url: "https://www.ibm.com/topics/cap-theorem"
+          }
+        ]
+      },
+      {
+        title: "Caching & Indexing Infrastructure",
+        description: "Accelerate memory response objects via fast cluster storage layers.",
+        modules: [
+          { name: "Redis Cache Layer Design", icon: SiRedis },
+          { name: "CDN Edge Caching Strategies", icon: FaSitemap },
+          { name: "Distributed Locking Engines", icon: SiRedis },
+          { name: "Elasticsearch Clustering", icon: SiElasticsearch }
+        ],
+        projects: [
+          {
+            title: "Distributed Fast-Read Content Cluster",
+            description: "Design synchronized CDN policies paired with isolated cluster data locks to handle extreme search lookups without loading backing engines.",
+            difficulty: "Advanced",
+            duration: "3 Weeks",
+            technologies: [
+              { name: "Redis Cache Layer Design", icon: SiRedis },
+              { name: "Elasticsearch Clustering", icon: SiElasticsearch },
+              { name: "Distributed Locking Engines", icon: SiRedis }
+            ]
+          }
+        ],
+        resources: [
+          {
+            title: "Redis Architecture & Caching Topologies",
+            type: "Documentation",
+            url: "https://redis.io/docs/latest/develop/data-types/"
+          },
+          {
+            title: "Elasticsearch Clustering & Scaling Guides",
+            type: "Documentation",
+            url: "https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html"
+          }
+        ]
+      },
+      {
+        title: "Asynchronous Message Streaming",
+        description: "Decouple microservices using reliable system data queues.",
+        modules: [
+          { name: "Apache Kafka Streaming Platforms", icon: SiApachekafka },
+          { name: "RabbitMQ Broker Systems", icon: SiRabbitmq },
+          { name: "API Gateway Integration Patterns", icon: FaSitemap },
+          { name: "Circuit Breakers & Graceful Degradation", icon: FaSitemap }
+        ],
+        projects: [
+          {
+            title: "Fault-Tolerant Distributed Message Streaming Hub",
+            description: "Architected a scalable enterprise messaging ledger handling millions of sequential requests, balancing partitions safely, and enforcing circuit breaker topologies.",
+            difficulty: "Advanced",
+            duration: "4 Weeks",
+            technologies: [
+              { name: "Apache Kafka Streaming Platforms", icon: SiApachekafka },
+              { name: "RabbitMQ Broker Systems", icon: SiRabbitmq },
+              { name: "Circuit Breakers & Graceful Degradation", icon: FaSitemap },
+              { name: "API Gateway Integration Patterns", icon: FaSitemap }
+            ]
+          }
+        ],
+        resources: [
+          {
+            title: "Apache Kafka Core Quickstart Introduction",
+            type: "Documentation",
+            url: "https://kafka.apache.org/documentation/#quickstart"
+          },
+          {
+            title: "RabbitMQ Tutorials and Message Queuing",
+            type: "Documentation",
+            url: "https://www.rabbitmq.com/getstarted.html"
+          },
+          {
+            title: "Understanding Circuit Breakers in Microservices",
+            type: "Article",
+            url: "https://martinfowler.com/bliki/CircuitBreaker.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
     id: "artificial-intelligence",
     title: "ARTIFICIAL INTELLIGENCE",
     description: "Learn modern AI technologies and intelligent systems.",

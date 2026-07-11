@@ -3,7 +3,8 @@ import { LEARNING_TRACKS } from "../data/learningTracks";
 import Hero from "../components/learningTrack/Hero/Hero";
 import Overview from "../components/learningTrack/Overview/Overview";
 import Timeline from "../components/learningTrack/TimeLine/Timeline";
-
+import  {Progress}  from "../components/learningTrack/Progress.tsx";
+import FAQ from "../components/learningTrack/FAQ/FAQ.tsx";
 export default function LearningTrackPage() {
   const { trackId } = useParams();
 
@@ -26,6 +27,8 @@ export default function LearningTrackPage() {
       <Hero track={track} />
       <Overview track={track} />
       <Timeline track={track} />
+      <Progress track={track} />
+      <FAQ/>
     </div>
   );
 }
