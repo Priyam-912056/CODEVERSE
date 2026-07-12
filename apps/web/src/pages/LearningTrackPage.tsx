@@ -5,6 +5,7 @@ import Overview from "../components/learningTrack/Overview/Overview";
 import Timeline from "../components/learningTrack/TimeLine/Timeline";
 import  {Progress}  from "../components/learningTrack/Progress.tsx";
 import FAQ from "../components/learningTrack/FAQ/FAQ.tsx";
+import CTA from "../components/learningTrack/CTA/CTA.tsx";
 export default function LearningTrackPage() {
   const { trackId } = useParams();
 
@@ -29,6 +30,7 @@ export default function LearningTrackPage() {
       <Timeline track={track} />
       <Progress track={track} />
       <FAQ/>
+      <CTA/>
     </div>
   );
 }
