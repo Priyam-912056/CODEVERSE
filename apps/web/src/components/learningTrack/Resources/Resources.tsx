@@ -6,16 +6,14 @@ interface ResourcesProps {
   phase: TimelinePhase;
 }
 
-export default function Resources({
-  phase,
-}: ResourcesProps) {
-  if (phase.resources.length === 0) return null;
+export default function Resources({ phase }: ResourcesProps) {
+  if (!phase.resources || phase.resources.length === 0) return null;
 
   return (
-    <div className="mt-14">
+    <div className="mt-16 w-full">
       <ResourcesHeader />
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 items-stretch w-full">
         {phase.resources.map((resource) => (
           <ResourceCard
             key={resource.title}

@@ -11,68 +11,63 @@ interface TimelinePhaseProps {
 
 export default function TimelinePhase({ phase, index }: TimelinePhaseProps) {
   return (
-    <div className="relative">
-      {/* Phase Number */}
+    <div className="relative group/phase">
+      {/* Node Phase Counter Dot Tracker */}
       <div
         className="
-          absolute
-          -left-4
-          top-0
-          flex
-          h-10
-          w-10
-          items-center
-          justify-center
-          rounded-full
-          border
-          border-violet-500/30
-          bg-violet-500/10
-          font-bold
-          text-violet-300
+          absolute left-0.5 top-1.5
+          flex h-7.5 w-7.5 items-center justify-center
+          rounded-full border border-violet-500/30
+          bg-zinc-900 font-bold text-xs text-violet-300
+          shadow-lg shadow-black z-10 transition-colors duration-300
+          group-hover/phase:border-violet-500 group-hover/phase:bg-violet-950/50
         "
       >
         {index + 1}
       </div>
 
-      {/* Card */}
+      {/* Main Structural Node Layout Card Content wrapper */}
       <div
         className="
-          ml-10
-          rounded-3xl
-          border
-          border-white/10
-          bg-white/3
-          p-8
-          backdrop-blur-xl
+          ml-12 rounded-2xl border
+          border-white/10 bg-zinc-900/20
+          p-5 sm:p-8 backdrop-blur-xl
+          transition-colors duration-300
+          hover:border-white/15
         "
       >
-        {/* Title */}
-        <h3 className="text-2xl font-bold">{phase.title}</h3>
+        {/* Phase Meta Title */}
+        <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-white">
+          {phase.title}
+        </h3>
 
-        {/* Description */}
-        <p className="mt-3 max-w-3xl text-zinc-400 leading-7">
+        {/* Short Phase Narrative Meta Text Descriptor */}
+        <p className="mt-2.5 max-w-3xl text-sm sm:text-base leading-relaxed text-zinc-400 font-normal">
           {phase.description}
         </p>
 
-        {/* Modules */}
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Dynamic Nested Structural Grid Sections Content Grid Systems */}
+        {/* Inner Modules Component Core Grid Node */}
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 items-stretch">
           {phase.modules.map((module) => (
             <TimelineItem key={module.name} module={module} />
           ))}
         </div>
-        {/* Projects */}
-        <div className="mt-10">
+
+        {/* Structural Sub Projects Area Layout Grid Block Renderers */}
+        <div className="mt-12 pt-6 border-t border-white/5">
           <ProjectHeader />
 
-          <div className="mt-6 grid gap-4 lg:grid-cols-2">
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 items-stretch">
             {phase.projects.map((project) => (
               <ProjectCard key={project.title} project={project} />
             ))}
           </div>
+        </div>
 
-          {/* Resources */}
+        {/* Shared Embedded Dynamic Static Secondary Meta Data Core Resources Asset Blocks Wrapper */}
+        <div className="mt-8 pt-4">
           <Resources phase={phase} />
-
         </div>
       </div>
     </div>

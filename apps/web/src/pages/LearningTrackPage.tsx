@@ -3,7 +3,7 @@ import { LEARNING_TRACKS } from "../data/learningTracks";
 import Hero from "../components/learningTrack/Hero/Hero";
 import Overview from "../components/learningTrack/Overview/Overview";
 import Timeline from "../components/learningTrack/TimeLine/Timeline";
-import  {Progress}  from "../components/learningTrack/Progress.tsx";
+import  Progress  from "../components/learningTrack/Progress/Progress.tsx";
 import FAQ from "../components/learningTrack/FAQ/FAQ.tsx";
 import CTA from "../components/learningTrack/CTA/CTA.tsx";
 export default function LearningTrackPage() {

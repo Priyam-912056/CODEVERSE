@@ -1,33 +1,20 @@
 export default function FAQHeader() {
   return (
-    <div className="text-center">
-      <p
-        className="
-          text-sm
-          font-semibold
-          uppercase
-          tracking-[0.3em]
-          text-violet-400
-        "
-      >
+    <div className="text-center max-w-3xl mx-auto flex flex-col items-center">
+      {/* Premium Pill Badge */}
+      <span className="inline-flex items-center rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-violet-300 backdrop-blur-md">
         Frequently Asked Questions
-      </p>
+      </span>
 
-      <h2 className="mt-4 text-4xl font-bold text-white">
+      {/* Main Heading Area */}
+      <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
         Got Questions?
       </h2>
 
-      <p
-        className="
-          mx-auto
-          mt-4
-          max-w-3xl
-          text-zinc-400
-          leading-8
-        "
-      >
+      {/* Subtitle / Paragraph description */}
+      <p className="mx-auto mt-4 max-w-2xl text-sm sm:text-base leading-relaxed text-zinc-400 font-normal">
         Find answers to the most common questions about this
-        learning roadmap and your learning journey.
+        learning roadmap and your personalized learning journey.
       </p>
     </div>
   );

@@ -6,55 +6,41 @@ interface SkillsGridProps {
 
 export default function SkillsGrid({ track }: SkillsGridProps) {
   return (
-    <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 w-full items-stretch">
       {track.skills.map((skill) => {
-        // Dynamic icon component ko capital letter variable mein store karna zaroori hai
         const SkillIcon = skill.icon;
 
         return (
           <div
-            key={skill.name} // Object ki jagah unique name ko key banaya
+            key={skill.name}
             className="
-              group
-              flex
-              items-center
-              gap-4
-              rounded-2xl
-              border
-              border-white/10
-              bg-white/3
-              p-5
-              backdrop-blur-xl
-              transition-all
-              duration-300
-              hover:-translate-y-1
-              hover:border-violet-500/30
-              hover:bg-violet-500/5
+              group flex items-center justify-between gap-x-4 
+              rounded-xl border border-white/10 bg-zinc-900/40 p-5 
+              backdrop-blur-md transition-all duration-300 
+              hover:-translate-y-1 hover:border-violet-500/20 hover:bg-zinc-900/60 
+              shadow-sm min-w-0
             "
           >
-            <div
-              className="
-                flex
-                h-10
-                w-10
-                shrink-0 /* Icon ko squeeze hone se bachane ke liye */
-                items-center
-                justify-center
-                rounded-xl
-                bg-violet-500/10
-                text-xl /* Icon ka size thoda sahi dikhega */
-                text-violet-400
-                transition-colors
-                group-hover:bg-violet-500/20
-              "
-            >
-              {/* Har skill ka apna specific icon yahan render hoga */}
-              <SkillIcon />
+            {/* Text details container */}
+            <div className="flex flex-col min-w-0">
+              <span className="font-semibold text-sm sm:text-base text-zinc-200
+               group-hover:text-white transition-colors duration-300 truncate">
+                {skill.name}
+              </span>
             </div>
 
-            <span className="font-medium text-slate-200 group-hover:text-white transition-colors">
-              {skill.name} {/* Object ki jagah .name render kiya */}
-            </span>
+            {/* Icon Container with subtle active borders */}
+            <div
+              className="
+                flex h-11 w-11 shrink-0 items-center justify-center 
+                rounded-xl bg-zinc-800/50 border border-white/5 
+                text-xl text-violet-400 transition-all duration-300 
+                group-hover:bg-violet-950/20 group-hover:border-violet-500/10 
+                group-hover:scale-105
+              "
+            >
+              <SkillIcon className="transition-transform duration-300 group-hover:scale-110" />
+            </div>
           </div>
         );
       })}
