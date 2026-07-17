@@ -23,7 +23,7 @@ export interface TimelinePhase {
 
 export interface ResourceItem {
   title: string;
-  type: "Documentation" | "Video" | "GitHub" | "Article" | "Cheat Sheet";
+  type: "Documentation" | "Video" | "GitHub" | "Article" | "Cheat Sheet" | "Course" | "Book Guide" |"Practice Platform" | "Guide" |"GitHub Repo" ;
   url: string;
 }
 
