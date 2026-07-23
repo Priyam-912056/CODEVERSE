@@ -9,6 +9,7 @@ export interface Project {
   id: string;
   title: string;
   description: string;
+  slug: string;
 
   category:
     | "Frontend"

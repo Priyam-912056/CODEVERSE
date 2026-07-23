@@ -5,6 +5,7 @@ import Entertainment from "../pages/Entertainment";
 import LearningTrackPage from "../pages/LearningTrackPage";
 import ProjectsPage from '../pages/ProjectsPage'
 import Roadmap from "../components/roadmaps/Roadmap";
+import ProjectDetailPage from "../pages/ProjectDetailPage";
 
 export default function AppRoutes() {
   return (
@@ -17,6 +18,7 @@ export default function AppRoutes() {
         path="/learning/:trackId"
         element={<LearningTrackPage />}
       /><Route path="/projects" element={ <ProjectsPage/>} />
+      <Route path="/projects/:slug" element={<ProjectDetailPage/>}></Route>
     </Routes>
   );
 }

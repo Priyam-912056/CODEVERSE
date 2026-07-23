@@ -10,6 +10,7 @@ import type { Project } from "../types/projects"; // Assuming your interface is 
 export const projects: Project[] = [
   {
     id: "frontend-adv-01",
+    slug: "high-frequency-trading-terminal",
     title: "High-Frequency Trading Terminal Storefront",
     description: "Architect an ultra-low-latency financial dashboard capable of rendering tens of thousands of concurrent data points via micro-frontends, custom Web Workers, and specialized canvas rendering layers.",
     category: "Frontend",
@@ -36,6 +37,7 @@ export const projects: Project[] = [
   },
   {
     id: "frontend-adv-02",
+    slug: "real-time-collaborative-audio-digital-workstation",
     title: "Real-time Collaborative Audio Digital Workstation",
     description: "Develop a browser-based multi-track audio engineering suite leveraging the Web Audio API, synchronized CRDT state management, and assembly-level performance optimization.",
     category: "Frontend",
@@ -62,6 +64,7 @@ export const projects: Project[] = [
   },
   {
     id: "frontend-adv-03",
+    slug: "zero-knowledge-cryptographic-multi-wallet-ui",
     title: "Zero-Knowledge Cryptographic Multi-Wallet UI",
     description: "Design a high-security decentralized digital asset platform featuring local browser-based cryptographic compilation, hardware key integrations, and complex state management.",
     category: "Frontend",
@@ -88,6 +91,7 @@ export const projects: Project[] = [
   },
   {
     id: "backend-adv-01",
+    slug: "distributed-multi-region-consensus-key-value-store",
     title: "Distributed Multi-Region Consensus Key-Value Store",
     description: "Engineer an ACID-compliant distributed transactional key-value data engine from scratch, featuring dynamic leader election protocols, continuous WAL replication, and cluster orchestration.",
     category: "Backend",
@@ -115,6 +119,7 @@ export const projects: Project[] = [
   },
   {
     id: "backend-adv-02",
+    slug: "real-time-dynamic-api-gateway-reverse-proxy",
     title: "Real-time Dynamic API Gateway & Reverse Proxy",
     description: "Construct a highly performant, distributed api gateway featuring programmatic dynamic routing, token-bucket throttling, and real-time JWT token validation clusters.",
     category: "Backend",
@@ -141,6 +146,7 @@ export const projects: Project[] = [
   },
   {
     id: "fullstack-adv-01",
+    slug: "serverless-edge-deployment-cloud-compute-engine",
     title: "Serverless Edge Deployment & Cloud Compute Engine",
     description: "Develop an elastic cloud infrastructure engine allowing developers to package, build, and deploy serverless isolated code containers to multi-region instances instantly.",
     category: "Full Stack",
@@ -169,6 +175,7 @@ export const projects: Project[] = [
   },
   {
     id: "fullstack-adv-02",
+    slug: "enterprise-multi-tenant-erp-suite",
     title: "Enterprise Multi-Tenant ERP Suite",
     description: "Architect a scalable enterprise logistics resource planning framework utilizing strict row-level multitenancy, dynamic schema migration, and complex operational pipelines.",
     category: "Full Stack",
@@ -197,6 +204,7 @@ export const projects: Project[] = [
   },
   {
     id: "fullstack-adv-03",
+    slug: "distributed-video-streaming-transcoder-operations-hub",
     title: "Distributed Video Streaming Transcoder Operations Hub",
     description: "Construct an automated, high-throughput ingestion platform that chunks, compresses, transcodes, and prepares massive raw video uploads for multi-bitrate HLS streaming.",
     category: "Full Stack",
@@ -225,6 +233,7 @@ export const projects: Project[] = [
   },
   {
     id: "fullstack-adv-04",
+    slug: "collaborative-real-time-document-ide-engine",
     title: "Collaborative Real-time Document IDE Engine",
     description: "Develop a feature-rich developer workspace environment containing file directories management, real-time shared multi-user editors, and active terminal virtualization systems.",
     category: "Full Stack",
@@ -253,6 +262,7 @@ export const projects: Project[] = [
   },
   {
     id: "ai-adv-01",
+    slug: "autonomous-agent-rag-orchestration-engine",
     title: "Autonomous Agent RAG Orchestration Engine",
     description: "Build a highly scalable autonomous intelligence agent runner platform incorporating multi-vector graph databases, dynamic agent context planning, and real-time tooling executions.",
     category: "AI",
@@ -281,6 +291,7 @@ export const projects: Project[] = [
   },
   {
     id: "ai-adv-02",
+    slug: "distributed-predictive-telemetry-anomaly-engine",
     title: "Distributed Predictive Telemetry Anomaly Engine",
     description: "Implement a high-performance machine learning model pipeline that processes thousands of streaming infrastructure events per second to flag systemic faults.",
     category: "AI",
@@ -308,6 +319,7 @@ export const projects: Project[] = [
   },
   {
     id: "mobile-adv-01",
+    slug: "offline-first-field-cryptographic-audit-app",
     title: "Offline-First Field Cryptographic Audit App",
     description: "Build a highly secure mobile data collection ecosystem utilizing fully peer-to-peer network syncing capabilities, strict local encryptions, and biometric signature checks.",
     category: "Mobile",

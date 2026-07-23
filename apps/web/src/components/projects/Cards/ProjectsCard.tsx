@@ -1,5 +1,6 @@
 import { FaArrowRight, FaClock, FaStar } from "react-icons/fa";
 import type { Project } from "../../../types/projects";
+import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
   project: Project;
@@ -183,6 +184,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
 
           {/* Action Button */}
+          <Link
+            to={`/projects/${project.slug}`}>
           <button
             className="
               flex
@@ -202,6 +205,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             Details
             <FaArrowRight className="text-[10px] transition-transform duration-300 group-hover:translate-x-0.5" />
           </button>
+          </Link>
         </div>
       </div>
     </div>
